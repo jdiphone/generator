@@ -10,9 +10,9 @@ $(function(){
 	var city = $('#city');
 	var county = $('#county');
 
-	province.append("<option value='-1'>请选择</option>");
-	city.append("<option value='-1'>请选择</option>");
-	county.append("<option value='-1'>请选择</option>");
+	province.append("<option value='110000'>北京市</option>");
+	city.append("<option value='110100'>市辖区</option>");
+	county.append("<option value='110108'>海淀区</option>");
     $.getJSON('area.json',function(data){
     	area = data;
     	for(var key in area){
